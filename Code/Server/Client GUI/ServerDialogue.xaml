@@ -1,0 +1,16 @@
+﻿<Window x:Class="Client_GUI.ServerDialogue"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client_GUI"
+        mc:Ignorable="d"
+        Title="Connect to a Server" Height="121.333" Width="200">
+    <Grid>
+        <Label x:Name="Description" Content="Enter the server's IP and Port" Height="25       " Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="165"/>
+        <TextBox x:Name="ipBox" Margin="10,35,0,0" TextWrapping="Wrap" Text="192.168.100.128" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="95" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
+        <TextBox x:Name="portBox" Margin="110,35,0,0" TextWrapping="Wrap" Text="5948" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="64.5" d:LayoutOverrides="VerticalAlignment"/>
+        <Button x:Name="button" Content="Connect" Margin="10,60,0,0" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="164.5" d:LayoutOverrides="VerticalAlignment" Click="Connect"/>
+
+    </Grid>
+</Window>
